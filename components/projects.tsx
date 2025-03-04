@@ -30,7 +30,7 @@ export default function Projects() {
       description:
         "I developed my portfolio website using React and Next.js, focusing on creating a fast, responsive, and dynamic user experience. The site showcases my projects, skills, and experience, with a clean and intuitive design to help visitors easily navigate through my work. By leveraging the power of React components and Next.js for optimized server-side rendering, I ensured a smooth and engaging experience. This project reflects my ability to design and build modern, performance-driven websites.",
       image: "/portfolio.png",
-      tags: ["React", "Node.js", "Next.js"],
+      tags: ["React", "Node.js", "Next.js", "TypeScript"],
       liveLink: "", 
       githubLink: "https://github.com/Diogoscabral/portfolio",
       color: "from-teal-600 to-emerald-600",
