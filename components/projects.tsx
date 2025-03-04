@@ -21,6 +21,7 @@ export default function Projects() {
         "Desenvolvi uma biblioteca digital em ASP.NET, implementando funcionalidades para gestão de livros, utilizadores e empréstimos, garantindo uma interface intuitiva e eficiente para administração de aceervos.",
       image: "/Biblioteca.png",
       tags: ["C#", "SQL"],
+      liveLink: "", // Remova ou deixe vazio para não exibir o botão
       githubLink: "https://github.com/Diogoscabral/Biblioteca",
       color: "from-teal-600 to-emerald-600",
     },
@@ -72,16 +73,18 @@ export default function Projects() {
                     Code
                   </a>
                 </Button>
-                <Button
-                  size="sm"
-                  asChild
-                  className={`rounded-full bg-gradient-to-r ${project.color} hover:opacity-90 border-0`}
-                >
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
-                  </a>
-                </Button>
+                {project.liveLink && (
+                  <Button
+                    size="sm"
+                    asChild
+                    className={`rounded-full bg-gradient-to-r ${project.color} hover:opacity-90 border-0`}
+                  >
+                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </a>
+                  </Button>
+                )}
               </CardFooter>
             </Card>
           ))}
