@@ -18,11 +18,21 @@ export default function Projects() {
     {
       title: "Biblioteca Online",
       description:
-        "Desenvolvi uma biblioteca digital em ASP.NET, implementando funcionalidades para gestão de livros, utilizadores e empréstimos, garantindo uma interface intuitiva e eficiente para administração de aceervos.",
+        "I developed a digital library in ASP.NET, implementing features for managing books, users, and loans, ensuring an intuitive and efficient interface for managing collections.",
       image: "/Biblioteca.png",
       tags: ["C#", "SQL"],
-      liveLink: "", // Remova ou deixe vazio para não exibir o botão
+      liveLink: "", 
       githubLink: "https://github.com/Diogoscabral/Biblioteca",
+      color: "from-teal-600 to-emerald-600",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "I developed my portfolio website using React and Next.js, focusing on creating a fast, responsive, and dynamic user experience. The site showcases my projects, skills, and experience, with a clean and intuitive design to help visitors easily navigate through my work. By leveraging the power of React components and Next.js for optimized server-side rendering, I ensured a smooth and engaging experience. This project reflects my ability to design and build modern, performance-driven websites.",
+      image: "/portfolio.png",
+      tags: ["React", "Node.js", "Next.js"],
+      liveLink: "", 
+      githubLink: "https://github.com/Diogoscabral/portfolio",
       color: "from-teal-600 to-emerald-600",
     },
   ]
