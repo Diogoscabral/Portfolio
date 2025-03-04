@@ -12,7 +12,7 @@ export default function Projects() {
       image: "/BartleZ.png",
       tags: ["HTML", "CSS", "JavaScript"],
       liveLink: "https://aquamarine-kirby-45.tiiny.site",
-      githubLink: "https://github.com/Diogoscabral/BratleZ",
+      githubLink: "https://github.com/Diogoscabral/BartleZ",
       color: "from-blue-600 to-teal-600",
     },
     {
