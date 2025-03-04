@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 47% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 47% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 200 95% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 47% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 47% 15%;
+    --muted-foreground: 215 20.2% 75.1%;
+
+    --accent: 20 90% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 47% 15%;
+    --input: 220 47% 15%;
+    --ring: 200 95% 50%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-blue-600 via-teal-600 to-emerald-600;
+  }
+
+  .gradient-border {
+    position: relative;
+  }
+
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: calc(var(--radius) + 2px);
+    background: linear-gradient(45deg, rgb(var(--primary)), rgb(var(--accent)));
+    z-index: -1;
+  }
+
+  .dark-gradient {
+    background: radial-gradient(circle at top right, hsl(200, 95%, 15%), transparent 40%),
+      radial-gradient(circle at bottom left, hsl(20, 90%, 15%), transparent 40%);
+  }
+
+  .card-gradient {
+    background: linear-gradient(to bottom right, hsl(var(--card)), hsl(210, 47%, 10%));
+  }
+}
+
