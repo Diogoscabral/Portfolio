@@ -21,7 +21,7 @@ export default function Projects() {
         "Desenvolvi uma biblioteca digital em ASP.NET, implementando funcionalidades para gestão de livros, utilizadores e empréstimos, garantindo uma interface intuitiva e eficiente para administração de aceervos.",
       image: "/Biblioteca.png",
       tags: ["C#", "SQL"],
-      liveLink: "#",
+      liveLink: "",
       githubLink: "https://github.com/Diogoscabral/Biblioteca",
       color: "from-teal-600 to-emerald-600",
     },
