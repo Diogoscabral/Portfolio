@@ -92,7 +92,9 @@ export default function Navbar() {
               className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 border-0 w-full"
               size="sm"
             >
-              Resume
+              <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
+                Download my CV
+              </a>
             </Button>
           </nav>
         </div>
